@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import ItemList from "./ItemList";
-import { produce, pantryItems } from "./storeItems";
+import { produce, pantryItems } from "./StoreItems";
 
-export default function GroceryCart() {
+export function GroceryCart() {
     // declare and initialize state 
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState([]);
 
     const addItem = (item) => {
         setCart((prev) => {
